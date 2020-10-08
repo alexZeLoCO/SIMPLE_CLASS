@@ -50,6 +50,11 @@ public class EdadPrueba {
 		System.out.printf("Si tiene %d años, faltan %d para los 100\n", Napoleón.getAños(),Napoleón.FaltanParaCien());		//MOSTRAMOS LOS AÑOS Y LOS QUE FALTAN PARA 100, UTILIZAREMOS DOS %d Y DOS MÉTODOS DEL OBJETO NAPOLEÓN
 		System.out.printf("La diferencia entre los años introducidos es de %d.",Math.abs(alex.getAños()-Napoleón.getAños()));		//MOSTRAMOS LA DIFERENCIA ENTRE LOS AÑOS HACIENDO UNA OPERACIÓN DE DOS MÉTODOS
 														//Llamamos al método abs() de la clase Math (preexistente en java) para obtener el valor absoluto de la resta. (evitar resultados negativos)
+	
+		alex.CopiarEdad(Napoleón.getAños());	//Llamamos al método copiarEdad() del objeto alex y le entregamos lo que devuelva el método Napoleón.getAños() (los años de Napoleón)
+							//El método calcularla la diferencia y establecerá los años de alex como dicha difrencia.
+									
+		System.out.printf("Los años de alex menos los de Napoleón son: %d.",alex.getAños());		//Utilizamos el método alex.getAños() apra recibir los años de alex. Que serán la diferencia entre alex y Napoleón.
 	}		
 
 }
